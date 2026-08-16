@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="نیم بها کننده لینک و نیم بها کننده دانلود">
+    <title>نیم بها کننده لینک آدرس دانلود</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/icons/remixicon.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+
+      <!-- Header Container -->
+      <div class="header__container">
+
+        <!-- Brand -->
+        <div class="header__brand">
+          <a href="index.html" class="header__logo">
+            <img
+              class="header__logo-img"
+              src="assets/images/logo.png"
+              alt="آدرس دانلود"
+            />
+          </a>
+        </div>
+
+        <!-- Actions -->
+        <div class="header__actions">
+
+          <!-- Hamburger -->
+          <button
+            type="button"
+            class="header__hamburger"
+            aria-label="باز کردن منو"
+            aria-expanded="false"
+            aria-controls="header-navigation"
+          >
+            <i class="ri-menu-line"></i>
+          </button>
+
+          <!-- Navigation -->
+          <nav
+            id="header-navigation"
+            class="header__navigation"
+            aria-label="منوی اصلی"
+          >
+
+            <!-- Menu Header -->
+            <div class="header__menu-header">
+              <h2 class="header__menu-title">آدرس دانلود</h2>
+
+              <button
+                type="button"
+                class="header__menu-close"
+                aria-label="بستن منو"
+              >
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+
+            <!-- Menu -->
+            <ul class="header__menu">
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">ثبت لینک</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">ویژگی ها</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">آمار</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">سوالات متداول</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">قوانین</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">ورود</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">ثبت نام</a>
+              </li>
+
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+      const hamburger = document.querySelector(".header__hamburger");
+      const navigation = document.querySelector(".header__navigation");
+      const close = document.querySelector(".header__menu-close");
+
+      hamburger.addEventListener("click", () => {
+        navigation.classList.add("active");
+        hamburger.setAttribute("aria-expanded", "true");
+      });
+
+      close.addEventListener("click", () => {
+        navigation.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    </script>
+</html>
