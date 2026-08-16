@@ -10,17 +10,14 @@
     }
 
     /* Actions */
-    .header__actions {
-        width: 70%;
-    }
+    .header__actions {width: 70%;}
 
     /* Hamburger */
-    .header__hamburger {
-        display: none;
-    }
+    .header__hamburger {display: none;}
 
     /* Navigation */
-    .header__navigation {
+    .header__navigation
+,.header__navigation.active {
         position: static;
         width: auto;
         height: auto;
@@ -33,6 +30,7 @@
     /* Menu Header */
     .header__menu-header {
         display: none;
+        padding: 0;
     }
 
     /* Menu */
@@ -40,6 +38,7 @@
         flex-direction: row;
         gap: 35px;
         padding: 0;
+        align-items: center;
     }
 
     /* Menu Link */
@@ -49,7 +48,5 @@
     }
 
     /* Menu Link Hover */
-    .header__menu-link:hover {
-        color: rgb(96, 93, 186);
-    }
+    .header__menu-link:hover {color: rgb(96, 93, 186);}
 }

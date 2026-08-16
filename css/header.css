@@ -45,9 +45,7 @@
     cursor: pointer;
 }
 
-.header__hamburger i {
-    font-size: 1.8rem;
-}
+.header__hamburger i {font-size: 1.8rem;}
 
 /* ================================
    Navigation
@@ -66,9 +64,7 @@
     z-index: 1000;
 }
 
-.header__navigation.active {
-    transform: translateX(0);
-}
+.header__navigation.active {transform: translateX(0);}
 
 /* ================================
    Menu Header
@@ -106,9 +102,7 @@
     cursor: pointer;
 }
 
-.header__menu-close:hover {
-    background-color: #31343b;
-}
+.header__menu-close:hover {background-color: #31343b;}
 
 /* ================================
    Menu
@@ -123,9 +117,7 @@
 /* ================================
    Menu Item
 ================================ */
-.header__menu-item {
-    list-style: none;
-}
+.header__menu-item {list-style: none;}
 
 /* ================================
    Menu Link

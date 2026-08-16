@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="نیم بها کننده لینک و نیم بها کننده دانلود">
     <title>نیم بها کننده لینک آدرس دانلود</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -22,13 +23,7 @@
 
         <!-- Brand -->
         <div class="header__brand">
-          <a href="index.html" class="header__logo">
-            <img
-              class="header__logo-img"
-              src="assets/images/logo.png"
-              alt="آدرس دانلود"
-            />
-          </a>
+          <a href="index.html" id="headerLogo" class="header__logo"></a>
         </div>
 
         <!-- Actions -->
@@ -37,6 +32,7 @@
           <!-- Hamburger -->
           <button
             type="button"
+            id="hamburger"
             class="header__hamburger"
             aria-label="باز کردن منو"
             aria-expanded="false"
@@ -47,7 +43,7 @@
 
           <!-- Navigation -->
           <nav
-            id="header-navigation"
+            id="headerNavigation"
             class="header__navigation"
             aria-label="منوی اصلی"
           >
@@ -58,6 +54,7 @@
 
               <button
                 type="button"
+                id="headerClose"
                 class="header__menu-close"
                 aria-label="بستن منو"
               >
@@ -66,56 +63,12 @@
             </div>
 
             <!-- Menu -->
-            <ul class="header__menu">
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">ثبت لینک</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">ویژگی ها</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">آمار</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">سوالات متداول</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">قوانین</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">ورود</a>
-              </li>
-
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="#">ثبت نام</a>
-              </li>
-
-            </ul>
+            <ul id="headerMenu" class="header__menu"></ul>
           </nav>
 
         </div>
       </div>
     </header>
   </body>
-  <script>
-      const hamburger = document.querySelector(".header__hamburger");
-      const navigation = document.querySelector(".header__navigation");
-      const close = document.querySelector(".header__menu-close");
-
-      hamburger.addEventListener("click", () => {
-        navigation.classList.add("active");
-        hamburger.setAttribute("aria-expanded", "true");
-      });
-
-      close.addEventListener("click", () => {
-        navigation.classList.remove("active");
-        hamburger.setAttribute("aria-expanded", "false");
-      });
-    </script>
+  <script src="js/main.js"></script>
 </html>
