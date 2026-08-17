@@ -17,7 +17,7 @@
 
     /* Navigation */
     .header__navigation
-,.header__navigation.active {
+    ,.header__navigation.active {
         position: static;
         width: auto;
         height: auto;
@@ -49,4 +49,20 @@
 
     /* Menu Link Hover */
     .header__menu-link:hover {color: rgb(96, 93, 186);}
+
+    /* ================================
+       Footer Container
+    ================================ */
+    .footer__container{
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ================================
+        Copyright && Credit
+    ================================ */
+    .footer__copyright , .footer__credit{padding-bottom: 0;}
 }

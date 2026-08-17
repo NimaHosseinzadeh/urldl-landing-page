@@ -1,0 +1,18 @@
+/* ================================
+   Footer Container
+================================ */
+.footer__container{padding: 30px 10px;}
+
+/* ================================
+   Copyright && Credit
+================================ */
+.footer__copyright , .footer__credit{
+    cursor: context-menu;
+    color: #60697b;
+    padding-bottom: .5rem;
+}
+
+/* ================================
+   Credit Link
+================================ */
+.footer__credit-link{color: #605DBA;}

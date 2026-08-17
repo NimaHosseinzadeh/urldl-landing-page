@@ -1,54 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
-
-
 /* ================================
-   Scrollbar
+   Reset
 ================================ */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: #605DBA transparent;
-}
-
-/* Reset Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
-    width: 100%;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-li{
-    list-style-type: none;
+ul,
+ol {
+    list-style: none;
 }
 
-body{
-    font-family: "Vazir", "Urbanist", sans-serif;
-}
-
-/* ================================
-   Scrollbar
-================================ */
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #605DBA;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #4f4ca3;
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
