@@ -4,6 +4,7 @@ const hamburger        = document.getElementById('hamburger');
 const headerNavigation = document.getElementById('headerNavigation');
 const headerClose      = document.getElementById('headerClose');
 const headerMenu       = document.getElementById('headerMenu');
+const heroPicture      = document.getElementById('heroPicture');
 
 // Create Logo
 const logo = {
@@ -50,3 +51,12 @@ headerClose.addEventListener('click' , () => {
     headerNavigation.classList.remove('active');
     hamburger.setAttribute("aria-expanded", "false");
 });
+
+// Create Hero Picture
+const heroPictureData = {
+    src : 'assets/images/pic1.png' ,
+    alt : 'نیم بها کردن لینک دانلود'
+};
+
+heroPicture.src = heroPictureData.src;
+heroPicture.alt = heroPictureData.alt;
