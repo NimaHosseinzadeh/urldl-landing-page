@@ -50,6 +50,50 @@
     /* Menu Link Hover */
     .header__menu-link:hover {color: rgb(96, 93, 186);}
 
+
+    /* ================================
+        Hero
+    ================================ */
+    .hero{
+        display: flex;
+        width: 100%;
+        max-width: 1470px;
+        margin: 0 auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .hero__container{
+        width: 50%;
+        padding-top: 100px;
+        padding-right: 5rem;
+    }
+
+    /* ================================
+        Hero Title
+    ================================ */
+    .hero__title{
+        font-size: 46px;
+    }
+
+    /* ================================
+        Hero Submit Button
+    ================================ */
+    .hero__button{
+        width: 20%;
+        margin: 0;
+        align-self: flex-end;
+    }
+    /* ================================
+        Hero Picture
+    ================================ */
+    .hero__picture{
+        width: 48%;
+        padding-top: 2rem;
+    }
+
     /* ================================
        Footer Container
     ================================ */
@@ -66,3 +110,4 @@
     ================================ */
     .footer__copyright , .footer__credit{padding-bottom: 0;}
 }
+
