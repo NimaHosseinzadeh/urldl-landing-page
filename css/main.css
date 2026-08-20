@@ -34,7 +34,7 @@
    Hero Description
 ================================ */
 .hero__description{
-    font-size: 23px; 
+    font-size: 18px; 
     color: #60697b;  
     margin-bottom: 2rem;
     text-align: justify;
@@ -75,6 +75,7 @@
 }
 
 .hero__input:focus ~ .hero__label{
+    color: #2259c8;
     transform: translate(-15px,-40px);
     font-size: 14px;
     padding: 0 5px;
