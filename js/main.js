@@ -92,8 +92,7 @@ heroButton.addEventListener('click', (e) => {
         heroResult.innerHTML = resultInputHero;
         // Clear Input
         heroInput.value = '';
-    }
-    
+    } 
 });
 
 // Copy Link
@@ -105,4 +104,5 @@ heroResult.addEventListener('click' , () => {
         heroMessage.classList.remove('show')
         navigator.vibrate(0);
     } , 2000)
+    heroResult.style.display = 'none'
 })
