@@ -6,6 +6,7 @@ const headerClose      = document.getElementById('headerClose');
 const headerMenu       = document.getElementById('headerMenu');
 const heroPicture      = document.getElementById('heroPicture');
 const heroInput        = document.getElementById('heroInput')
+const heroMessage      = document.getElementById('heroMessage');
 const heroResult       = document.getElementById('heroResult')
 const heroButton       = document.getElementById('heroButton');
 
@@ -69,16 +70,20 @@ heroPicture.alt = heroPictureData.alt;
 heroButton.addEventListener('click', (e) => {
     // Prevent Default Form Submission
     e.preventDefault();
+
     // Get Input Value
     let valueInputHero = heroInput.value;
+
     // Check Empty Input
     if(valueInputHero === ''){
         alert('مقداری وارد نشده است');
     }
+
     // Validate Download Link
     else if(!(/^https:\/\/.+\.[a-zA-Z]{2,}(\/.*)?$/.test(valueInputHero))){
         alert('لینک باید با https:// شروع شود و دارای دامنه معتبر باشد');
     }
+
     // Generate Fake Half-Price Download Link
     else{
         let resultInputHero = valueInputHero.replace(/\.[^.]+$/, ".ir");
@@ -88,4 +93,16 @@ heroButton.addEventListener('click', (e) => {
         // Clear Input
         heroInput.value = '';
     }
+    
 });
+
+// Copy Link
+heroResult.addEventListener('click' , () => {
+    navigator.clipboard.writeText(heroResult.textContent)
+    heroMessage.classList.add('show')
+    navigator.vibrate([30, 40, 50]);
+    setTimeout(() => {
+        heroMessage.classList.remove('show')
+        navigator.vibrate(0);
+    } , 2000)
+})
